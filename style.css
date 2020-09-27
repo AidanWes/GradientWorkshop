@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 3%;
+}
+
+label{
+    margin-top: 5%;
+}
+
+.settings-wrapper{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+    color: white;
+    width: 12%;
+    padding: 0 2% 1% 1%;
+}
+
+.output-wrapper{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+    padding: 10px;
+    width: 30%;
+    position: fixed;
+    top: 85%;
+}
+
+.output-wrapper:hover{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.output-wrapper:active{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 600px) {
+    .settings-wrapper{
+        width: 22%;
+        font-size: 1rem;
+    }
+    
+    .output-wrapper{
+        font-size: 12px;
+        width: 90%;
+        top: 80%;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Gradient</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="background">
+<div class="website-wrapper">
+    <div class="settings-wrapper">
+            <label for="gradient-one">Gradient One:</label>
+            <input type="color" class="color" value="#6C506E" id="gradient-one" onchange="color();">
+
+            <label for="gradient-two">Gradient Two:</label>
+            <input type="color" class="color" value="#601C6E" id="gradient-two" onchange="color();">
+        
+            <label for="deg">Degree:</label>
+            <input type="range" min="0" max="360" value="185" id="deg" oninput="color();">
+    
+            <label for="percent-one">Percent One:</label>
+            <input type="range" min="0" max="100" value="0" id="percent-one" oninput="color();">
+    
+            <label for="percent-two">Percent Two:</label>
+            <input type="range" min="0" max="100" value="75" id="percent-two" oninput="color();">
+    </div>
+    
+    <div class="output-wrapper">
+        Output: <br> <div id="output-text" onclick="copy();"></div>
+    </div>
+</div>
+<script src="script.js" onload="color();"></script>
+</body>
+</html>
